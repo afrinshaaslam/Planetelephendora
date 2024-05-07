@@ -15,8 +15,8 @@ toggleThemeBtn.addEventListener("click", function () {
 
   const logoHTML =
     currentTheme === "light"
-      ? `<img class="nav-logo-img" src="assets/image/elephandora white.jpg" alt="elephandora-logo" />`
-      : `<img class="nav-logo-img" src="assets/image/elephandora black.jpg" alt="elephandora-logo" />`;
+      ? `<img class="nav-logo-img" src="assets/image/elephandora white logo.png" alt="elephandora-logo" />`
+      : `<img class="nav-logo-img" src="assets/image/elephandora black logo.png" alt="elephandora-logo" />`;
 
   navLogo.innerHTML = logoHTML;
 
