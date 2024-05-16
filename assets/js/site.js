@@ -6,6 +6,7 @@ const cursorOutline = document.querySelector("[data-cursor-outline]");
 const nav = document.querySelector(".nav-bar");
 const header = document.querySelector(".header");
 const navLogo = document.querySelector(".nav-logo");
+const hamburger = document.querySelector(".bi-list");
 
 toggleThemeBtn.addEventListener("click", function () {
   const currentTheme = document.documentElement.getAttribute("data-theme");
@@ -23,6 +24,12 @@ toggleThemeBtn.addEventListener("click", function () {
   document.documentElement.setAttribute("data-theme", newTheme);
   lightThemeIcon.classList.toggle("hide");
   dataThemeIcon.classList.toggle("hide");
+  hamburger.classList.toggle("hamburger-black");
+});
+
+hamburger.addEventListener("click", function () {
+  const mobileMenu = document.querySelector(".mobile-menu");
+  mobileMenu.classList.toggle("hide");
 });
 
 window.addEventListener("mousemove", function (e) {
