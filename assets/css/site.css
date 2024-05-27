@@ -1213,7 +1213,7 @@ input[type="radio"] {
 
 #card1 .project-card-body {
   backdrop-filter: blur(10px);
-  background: rgb(61 88 129);
+  background: rgb(43 41 66);
 }
 
 #card2 .project-card-body {
@@ -1287,6 +1287,11 @@ input[type="radio"] {
 
   .project-card-desc {
     padding: 0 15px;
+  }
+
+  .projects-content {
+    display: grid;
+    place-items: start;
   }
 }
 
@@ -1412,11 +1417,18 @@ input[type="radio"] {
   margin-bottom: 48px;
 }
 
-.brand-section .socials i {
+.brand-section .socials a i {
   background: #fff;
   padding: 10px;
   border-radius: 5px;
   margin-right: 14px;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.brand-section .socials a i:hover {
+  background: #000000;
+  color: #fff;
 }
 
 .menus-section {
